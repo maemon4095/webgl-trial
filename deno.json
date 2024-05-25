@@ -1,0 +1,22 @@
+{
+  "tasks": {
+    "dev": "deno run -A build.ts"
+  },
+
+  "compilerOptions": {
+    "lib": [
+      "deno.window",
+      "dom",
+      "dom.iterable"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "jsxImportSourceTypes": "@types/preact"
+  },
+
+  "imports": {
+    "preact": "npm:preact",
+    "preact/hooks": "npm:preact/hooks",
+    "@loader-type/": "https://raw.githubusercontent.com/maemon4095/deno-esbuilder/main/plugins/loaderOverride/types/"
+  }
+}
